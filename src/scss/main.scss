@@ -1,0 +1,43 @@
+h2 {
+  padding-top: 2rem;
+}
+
+#todo-list {
+  padding-left: 0;
+
+  & article {
+    border: 1px solid gainsboro;
+    padding: 1rem;
+    margin: 0;
+
+    & .title-container {
+      & .title {
+        font-weight: bold;
+      }
+    }
+  }
+
+  & input.edit {
+    display :none;
+  }
+
+  & >li {
+    list-style: none;
+    padding-top: 1.5em;
+  }
+
+  & .completed {
+    text-decoration: line-through;
+  }
+
+  & .editing {
+    & .title {
+      display: none;
+    }
+
+    & .edit {
+      display: inline;
+    }
+
+  }
+}
